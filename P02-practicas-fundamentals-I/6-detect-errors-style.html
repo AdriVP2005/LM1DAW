@@ -1,14 +1,18 @@
 <button id="fontSizeButton">Change Font Size</button>
+<button id="resetFontSizeButton">Reset Font Size</button>
 <p id="fontSizeParagraph">This is some text.</p>
 <script>
   const button = document.getElementById("fontSizeButton");
+  const resetButton = document.getElementById("resetFontSizeButton");
   const paragraph = document.getElementById("fontSizeParagraph");
 
   button.addEventListener("click", function () {
     paragraph.style.fontSize = "24px";
   });
 
-
+  resetButton.addEventListener("click", function () {
+    paragraph.style.fontSize = "12px";
+  });
 
   // TODO: Fix the error and add other button to set the size back to 12px
 

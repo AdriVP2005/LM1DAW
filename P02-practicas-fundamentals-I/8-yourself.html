@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -28,21 +29,48 @@
 <body>
 
   <h1>First Javascript contact</h1>
-  <p>This is the initial text.</p>
+  <p id="textParagraph">This is the initial text.</p>
 
-  <button>Hello World</button>
-  <button>Goodbye World</button>
-  <button>Bold</button>
-  <button>Italic</button>
-  <button>Change Color</button>
+  <button id="helloButton">Hello World</button>
+  <button id="goodbyeButton">Goodbye World</button>
+  <button id="boldButton">Bold</button>
+  <button id="italicButton">Italic</button>
+  <button id="colorButton">Change Color</button>
 
   <script>
+
       // A button that, when clicked, changes the text of the paragraph <p> to "Hello World".
       // A button that, when clicked, changes the text of the paragraph < p > to "Goodbye World".
       // A button that, when clicked, change the text style to bold.
       // A button that, when clicked, change the text style to italic.
       // A button that, when clicked, change the color of the text to red, when it is clicked again set the color back to the initial color.
 
+    const paragraph = document.getElementById("textParagraph");
+    const helloButton = document.getElementById("helloButton");
+    const goodbyeButton = document.getElementById("goodbyeButton");
+    const boldButton = document.getElementById("boldButton");
+    const italicButton = document.getElementById("italicButton");
+    const colorButton = document.getElementById("colorButton");
+
+    helloButton.addEventListener("click", () => {
+      paragraph.textContent = "Hello World";
+    });
+
+    goodbyeButton.addEventListener("click", () => {
+      paragraph.textContent = "Goodbye World";
+    });
+
+    boldButton.addEventListener("click", () => {
+      paragraph.style.fontWeight = paragraph.style.fontWeight === "bold" ? "normal" : "bold";
+    });
+
+    italicButton.addEventListener("click", () => {
+      paragraph.style.fontStyle = paragraph.style.fontStyle === "italic" ? "normal" : "italic";
+    });
+
+    colorButton.addEventListener("click", () => {
+      paragraph.style.color = paragraph.style.color === "red" ? "black" : "red";
+    });
   </script>
 
 </body>
