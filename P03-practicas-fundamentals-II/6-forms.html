@@ -12,34 +12,93 @@
   <form id="registroForm">
     <label>Nombre:</label>
     <input type="text" id="nombre">
-    <span id="errorNombre"></span>
+    <span id="errorNombre" style="color: red;"></span>
 
     <label>Email:</label>
     <input type="email" id="email">
-    <span id="errorEmail"></span>
+    <span id="errorEmail" style="color: red;"></span>
 
     <label>Contraseña:</label>
     <input type="password" id="password">
-    <span id="errorPassword"></span>
+    <span id="errorPassword" style="color: red;"></span>
 
     <label>Confirmar Contraseña:</label>
     <input type="password" id="confirmPassword">
-    <span id="errorConfirmPassword"></span>
+    <span id="errorConfirmPassword" style="color: red;"></span>
 
-    <button type="submit">Registrarse</button>
-    <p>Nombre</p>
-    <p>Email</p>
-    <p>Contraseña</p>
-    <p>Confirmar Contraseña:</p>
+    <button type="button" id="submitButton">Registrarse</button>
+    <p id="displayNombre"></p>
+    <p id="displayEmail"></p>
+    <p id="displayPassword"></p>
+    <p id="displayConfirmPassword"></p>
   </form>
 
-  <script>
+<script>
+  
     //TODO: When the button Registrarse is clicked, it should display all the input value in their respective <p> tag
     // Add also a validation for the form, if the name is empty, show an error message in the <span> tag with id="errorNombre"
     // If the email is empty, show an error message in the <span> tag with id="errorEmail"
     // If the password is empty, show an error message in the <span> tag with id="errorPassword"
     // If the password and confirm password are not the same, show an error message in the <span> tag with id="errorConfirmPassword"
-  </script>
+  
+  const submitButton = document.getElementById("submitButton");
+
+  submitButton.addEventListener("click", function () {
+    // Obtener valores de los inputs
+    const nombre = document.getElementById("nombre").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const password = document.getElementById("password").value.trim();
+    const confirmPassword = document.getElementById("confirmPassword").value.trim();
+
+    // Obtener elementos de error y display
+    const errorNombre = document.getElementById("errorNombre");
+    const errorEmail = document.getElementById("errorEmail");
+    const errorPassword = document.getElementById("errorPassword");
+    const errorConfirmPassword = document.getElementById("errorConfirmPassword");
+
+    const displayNombre = document.getElementById("displayNombre");
+    const displayEmail = document.getElementById("displayEmail");
+    const displayPassword = document.getElementById("displayPassword");
+    const displayConfirmPassword = document.getElementById("displayConfirmPassword");
+
+    // Resetear mensajes de error
+    errorNombre.textContent = "";
+    errorEmail.textContent = "";
+    errorPassword.textContent = "";
+    errorConfirmPassword.textContent = "";
+
+    let isValid = true;
+
+    // Validaciones
+    if (nombre === "") {
+      errorNombre.textContent = "El nombre es obligatorio.";
+      isValid = false;
+    }
+
+    if (email === "") {
+      errorEmail.textContent = "El email es obligatorio.";
+      isValid = false;
+    }
+
+    if (password === "") {
+      errorPassword.textContent = "La contraseña es obligatoria.";
+      isValid = false;
+    }
+
+    if (password !== confirmPassword) {
+      errorConfirmPassword.textContent = "Las contraseñas no coinciden.";
+      isValid = false;
+    }
+
+    // Mostrar valores si el formulario es válido
+    if (isValid) {
+      displayNombre.textContent = `Nombre: ${nombre}`;
+      displayEmail.textContent = `Email: ${email}`;
+      displayPassword.textContent = `Contraseña: ${password}`;
+      displayConfirmPassword.textContent = `Confirmar Contraseña: ${confirmPassword}`;
+    }
+  });
+</script>
 </body>
 
 </html>

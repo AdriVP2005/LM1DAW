@@ -2,14 +2,22 @@
 <p class="changeable">Paragraph 1</p>
 <p class="changeable">Paragraph 2</p>
 <p class="changeable">Paragraph 3</p>
+<ul id="changedList"></ul>
 
 <script>
   const button = document.getElementById("changeAllButton");
   const paragraphs = document.getElementsByClassName("changeable");
+  const changedList = document.getElementById("changedList");
 
   button.addEventListener("click", function () {
+  changedList.innerHTML = "";
+
     for (let i = 0; i < paragraphs.length; i++) {
       paragraphs[i].textContent = "Changed!";
+
+      const listItem = document.createElement("li");
+      listItem.textContent = paragraphs[i].textContent;
+      changedList.appendChild(listItem);
     }
   });
 
