@@ -1,0 +1,47 @@
+[
+    {
+        "name": "Bar Antonio",
+        "price range": "Economical",
+        "accesibility": "Not Reduced Movility Adapatation",
+        "address": "Calle Alacalde Joaquín Quiles 27",
+        "type": "Tapas Bar",
+        "recommended": true,
+        "location": "https://www.tripadvisor.es/Restaurant_Review-g187438-d1000000-Reviews-El_Pimpi-Malaga_Costa_del_Sol_Province_of_Malaga_Andalucia.html"
+    },
+    {
+        "name": "Bar Felipe",
+        "price range": "Economical",
+        "accesibility": "Not Reduced Movility Adapatation",
+        "address": "Calle Fernando Marín 31",
+        "type": "Tapas Bar",
+        "recommended": true,
+        "location": "https://www.tripadvisor.es/Restaurant_Review-g187439-d1000000-Reviews-El_Pimpi-Malaga_Costa_del_Sol_Province_of_Malaga_Andalucia.html"
+    },
+    {
+        "name": "Restaurante Sara",
+        "price range": "Economical",
+        "accesibility": "Reduced Movility Adapatation",
+        "address": "Calle María Velázquez 16",
+        "type": "Tapas Restaurant",
+        "recommended": true,
+        "location": "https://www.tripadvisor.es/Restaurant_Review-g183439-d1000000-Reviews-El_Pimpi-Malaga_Costa_del_Sol_Province_of_Malaga_Andalucia.html"
+    },
+    {
+        "name": "Bar Leandra",
+        "price range": "Luxurious",
+        "accesibility": "Reduced Movility Adapatation",
+        "address": "Calle Mafalda Fernández 11",
+        "type": "Italian Bar",
+        "recommended": false,
+        "location": "https://www.tripadvisor.es/Restaurant_Review-g182439-d1000000-Reviews-El_Pimpi-Malaga_Costa_del_Sol_Province_of_Malaga_Andalucia.html"   
+    },
+    {
+        "name": "Bar Alegría",
+        "price range": "Luxurious",
+        "accesibility": "Reduced Movility Adapatation",
+        "address": "Calle Luis Miguel Herrera 23",
+        "type": "Tapas Bar",
+        "recommended": false,
+        "location": "https://www.tripadvisor.es/Restaurant_Review-g287439-d1000000-Reviews-El_Pimpi-Malaga_Costa_del_Sol_Province_of_Malaga_Andalucia.html"
+    }
+]

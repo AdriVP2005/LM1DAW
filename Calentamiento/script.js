@@ -50,3 +50,12 @@ boton.addEventListener("click", function() {
     formulario.style.display = "none";
   }
 });
+
+let fps = ["Ver videos","Jugar videojuegos", "Leer", "Quedar con amigos","Escuchar música"];
+
+let orferListEl = document.getElementById("order_list");
+for(var i=0; i<fps.length; i++){
+    let li = document.createElement("li")
+    li.innerText = fps[i];
+    orderListEl.appendChild(li);
+}
