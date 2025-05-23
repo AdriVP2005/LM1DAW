@@ -1,0 +1,14 @@
+<hotels>
+    <hotel>
+        <id>1</id>
+        <name>NH</name>
+    </hotel>
+    <hotel>
+        <id>2</id>
+        <name>IBIS</name>
+    </hotel>
+    <hotel>
+        <id>3</id>
+        <name>BARCELO</name>
+    </hotel>
+</hotels>

@@ -1,0 +1,20 @@
+body {
+    background-image: url("fondo/fd2.png");
+}
+
+.btn-group .btn {
+   font-family: 'Georgia', sans-serif;  /* tipo de letra */
+   font-size: 1.2em;    /* tamaño del texto */
+   letter-spacing: 3px; /* espacio entre letras */
+   padding: 10px;   /* espacio interior (relleno) */
+   border-radius: 25px; /* redondeo de borde */
+   border-color: #ffffff;
+}
+
+.btn-group .btn:hover {
+   background-color: rgb(58, 2, 55);    /* color fondo */
+   color: #ffc107;  /* color letra */
+   transform: scale(1.1);   /* efecto zoom */
+   box-shadow: 0px 10px 10px #ffc107;   /* sombra y hacia donde se proyecta */
+}
+

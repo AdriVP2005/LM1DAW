@@ -1,0 +1,38 @@
+
+body {
+    background-image: url("fondo/fd5.png");
+}
+
+.btn-group .btn {
+   font-family: 'Georgia', sans-serif;  /* tipo de letra */
+   font-size: 1.2em;    /* tamaño del texto */
+   letter-spacing: 3px; /* espacio entre letras */
+   padding: 10px;   /* espacio interior (relleno) */
+   border-radius: 25px; /* redondeo de borde */
+   border-color: #ffffff;
+}
+
+.btn-group .btn:hover {
+   background-color: rgb(58, 2, 55);    /* color fondo */
+   color: #ffc107;  /* color letra */
+   transform: scale(1.1);   /* efecto zoom */
+   box-shadow: 0px 10px 10px #ffc107;   /* sombra y hacia donde se proyecta */
+}
+
+.card-body {
+    background-color: #edfbff;
+    box-shadow: 0 4px 20px rgb(173, 120, 243);
+    padding: 2rem;    /* la unidad root em, para que la página sea más responsiva */
+    border: 3px solid #0e56a3;
+    border-radius: 30px;
+
+}
+
+.card .card-title {
+    color: #40257e;
+}
+
+.container{
+    border: #0e56a3;
+    border-radius: 10%;
+}

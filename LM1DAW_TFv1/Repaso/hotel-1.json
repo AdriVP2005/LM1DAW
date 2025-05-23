@@ -1,0 +1,21 @@
+{
+    "id": 1,
+    "nombre": "NH",
+    "address": "Málaga",
+    "stars": 5,
+    "main:img": ".jpg",
+    "images": [
+        ".jpg",
+        ".jpg"
+    ],
+    "books":[
+        {
+            "start_date": "12",
+            "end": "12"
+        },
+        {
+            "start_date": "12",
+            "end": "12"
+        }
+    ]
+}

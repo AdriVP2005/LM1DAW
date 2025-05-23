@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "nombre": "NH",
+        "address": "Málaga",
+        "stars": 5
+    },
+    {
+        "id": 2,
+        "nombre": "IBIS",
+        "address": "Málaga",
+        "stars": 5 
+    },
+    {
+        "id": 3,
+        "nombre": "BARCELO",
+        "address": "Málaga",
+        "stars": 5     
+    }
+]

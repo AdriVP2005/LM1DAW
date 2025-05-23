@@ -1,0 +1,68 @@
+body {
+    background-image: url("fondo/fd7.png");
+}
+
+.btn-group .btn {
+   font-family: 'Georgia', sans-serif;  /* tipo de letra */
+   font-size: 1.2em;    /* tamaño del texto */
+   letter-spacing: 3px; /* espacio entre letras */
+   padding: 10px;   /* espacio interior (relleno) */
+   border-radius: 25px; /* redondeo de borde */
+   border-color: #ffffff;
+}
+
+.btn-group .btn:hover {
+   background-color: rgb(58, 2, 55);    /* color fondo */
+   color: #ffc107;  /* color letra */
+   transform: scale(1.1);   /* efecto zoom */
+   box-shadow: 0px 10px 10px #ffc107;   /* sombra y hacia donde se proyecta */
+}
+
+
+/* tarjeta principal */
+.card {
+  background-color: #ffffffcc; /* fondo blanco translúcido */
+  border-radius: 15px;         /* fordes redondeados */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* sombra suave */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* animación suave al transformar */
+}
+
+.card:hover {
+  transform: translateY(-5px);  /* levanta la tarjeta al pasar el ratón */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);  /* sombra más intensa al pasar el ratón */
+}
+
+/* selector de ciudad */
+#ciudad {
+  max-width: 300px; /* ancho máximo */
+  margin: 0 auto;   /* centrado horizontal */
+  border: 2px solid #0a9396;    /* borde solid es como en negrita */
+  font-size: 1.1rem;    /* tamaño de letra */
+  color: #005f73;   /* color del texto */
+  background-color: #e0fbfc;    /* fondo */
+  transition: border-color 0.3s ease;   /* transición al cambiar borde */
+}
+
+/* Lista de clima actual */
+#clima-actual ul.list-group li.list-group-item {
+  font-size: 1.1rem;    /* amaño de letra */
+  color: #333;  /* color gris oscuro */
+  border: none; /* sin borde */
+  padding-left: 0;  /* sin padding a la izquierda */
+  padding-right: 0; /* sin padding a la derecha */
+  display: flex;    /* layout flex para alinear contenido */
+  justify-content: space-between; /* espacio entre elementos */
+}
+
+/* previsión diaria */
+.card .card-body p {
+  margin-bottom: 0.3rem;    /* espacio pequeño debajo de los párrafos */
+  font-size: 0.95rem;   /* Tamaño de letra un poco más pequeño */
+  color: #555;  /* Color gris medio */
+}
+
+/* alertas meteorológicas */
+#alerta p {
+  font-size: 1rem;  /* tamaño de letra normal */
+  font-weight: 600; /* negrita semi */
+}

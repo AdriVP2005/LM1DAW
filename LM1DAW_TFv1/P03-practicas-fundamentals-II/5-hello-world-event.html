@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hola Mundo con Evento</title>
+  <script>
+    function mostrarMensaje() {
+      // Mostrar alerta con "Hola Mundo"
+      alert("Hola Mundo");
+
+      // Añadir el mensaje al <p> con id="mensaje"
+      const mensajeParrafo = document.getElementById("mensaje");
+      mensajeParrafo.textContent = "Hola Mundo";
+    }
+  </script>
+</head>
+
+<body>
+  <button onclick="mostrarMensaje()">Mostrar Mensaje</button>
+  <p id="mensaje"></p>
+</body>
+
+</html>

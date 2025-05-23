@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Presentación</title>
+    <link rel="stylesheet" href="clase1.css">
+</head>
+<body>
+    <header>
+        <h1 id="fullName">Adrián Vitos Parra</h1>
+    </header>
+    
+    <button id="nameButton">Cambia el título/color</button>
+
+    <p>Estoy en clase de Lenguaje de Marca</p>
+
+    <main>
+        <section class="recuadro">
+            <h2>Sobre mí</h2>
+            <p>Hola, soy Adrián y esta es mi presentación.</p>
+        </section>
+        <section class="recuadro">
+            <h2>Aficiones</h2>
+            <ol>
+                <li>Ver videos</li>
+                <li>Jugar videojuegos</li>
+                <li>Leer</li>
+                <li>Quedar con amigos</li>
+                <li>Escuchar música</li>
+            </ol>
+            <button id="order_list"> Alerta aficiones</button>
+        </section>
+        <button id="nameButton2">Mostrar/Ocultar formulario</button>
+        <div id="contactForm" class="contact-form">
+            <label>Nombre Completo</label>
+            <input type="text" id="name" name="name" required>
+            <label>Teléfono</label>
+            <input type="number" id="phone" name="phone">
+            <label>Email</label>
+            <input type="email" id="email" name="email">
+            <label>Mensaje</label>
+            <textarea id="message" name="message"></textarea>
+        </div>
+    </main>
+
+    <footer>
+        <p>Gracias por tu atención.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
